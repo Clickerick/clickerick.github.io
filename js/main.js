@@ -1,42 +1,10 @@
 /*
 
-To understand the structure of this program, there are a few things to know:
+Dear future employers, welcome to my code.
+At the time I wrote it, I wasn't aware of ES6, which is now part of my repertory.
+Also I wrote it in a pretty uncommon way, because I was just learning JS.
 
-Every unicorn-item is located in the 'unicorns' array which groups all the unicorns.
-The 'unicorns' array is located in the 'items' array that lists all the items. Same thing for the other items.
-
-Its like this:
-
-														  items
-							 _______________________________|_______________________________ _______________________________ 	...
-							|															  	|									...
-						unicorns														cottoncandys 							...
-					  ( items[0] )														( items[1] )
-	________________________|___________________ ______ ...			 _______________________|___________________ ______ 		...
-	|						|					|		...			|						|					|				...						
-unicorn-item		unicorn1-item		unicorn2-item	...		cottoncandy-item	cottoncandy-item	cottoncandy-item		...
-( unicorns[0] )		( unicorns[1] )		( unicorns[2] )			( cottoncandys[0] ) ( cottoncandys[1] ) ( cottoncandys[2] )
-
-
-						   /\															    /\
-						  /  \															   /  \
-so when we want to call  /this\  item, we simply write items[0][1]. If we want 			  /this\	      item, we write items[1][1]. Get it?
-
-Also, every item has a counter that declares which item (unicorn1, unicorn2...) is the current one to apply things to.
-These counters are also put in an array 'counters'. Like the unicorn has the number 0 in the 'items' array, it also has the number 0 in the counter array.
-Same thing applies to the other items.
-
-So if we want to call the current unicorn, we call it by typing items[0][counters[0]].
-In this way we can always call the current item by just changing the '0' to just another number.
-The reason why we do this is to make functions universal. We use the array numbers as a function argument called 'num'.
-By doing this the function can by applied to every item depending on what number is given to the function.
-
-
-A few abbreviations which are used in this code:
-mid = middle
-max = maximum
-var = variable
-init = initialize
+Have fun!
 
 */
 
